@@ -1,0 +1,29 @@
+For the given two coordinate sets for two
+protein models: 1 – coordinates of the Calpha
+trace of the peptide 1zta. 2- same peptide, but
+different NMR-model. The objective of this
+exercise is to
+– Compute the radius of gyration for both models
+– optimally superimpose both models based on
+aligning their respective moments of inertia
+vectors
+– Compute the RMSD
+
+Tasks
+• Compute the radius of gyration for both models.
+• Translate and rotate the second model in such a way that the two models
+are optimally superimposed.
+– Compute the center of mass (Note: each “atom/bead” is assumed to have the
+same mass).
+– Center both models to the center of origin (0, 0, 0).
+– Based on the provided moments of inertia vectors (refer InertisVectors.txt), rotate Model 2 in such a way that both sets of moments of inertia
+vectors as well as the associated coordinates are superimposed.
+Note:
+– the moments of inertia vectors are pre-sorted; i.e. the first vector of
+the first model needs to be rotated to match up the the first of the second model and so forth
+– Try 180-degree rotational symmetry-solutions (+/-180 degrees)
+– Write the new coordinate sets for both models into two new structure data
+files (with identical header lines (first 2 lines) as in the original data file). Upon
+loading them into a viewer software (unzip 2nd_HA_Addtl_C_Code.tar for xprot_exercise.c), both models should be
+optimally superimposed as displayed)
+– After superimposing the models, compute the RMSD 
