@@ -1,0 +1,27 @@
+A routine to compute the dihedral angle defined by the following points!
+For eg:
+X1=(0,0,1); X2=(0,0,0); X3=(1,0,0); X4=(1,1,1)
+Answer: -45°
+
+X1=(0,0,1); X2=(0,0,0); X3=(1,0,0); X4=(1,-1,1)
+Answer: +45°
+
+Computing all phi/psi for a protein (Example protein: 5KEH)
+– Download PDB /mmCIF file
+– Write a routine to read in all relevant main chain atoms(N, CA, C) (File format: http://www.wwpdb.org/documentation/fileformat-content/format33/v3.3.html)
+– Apply dihedral-angle routine to compute all phi and psi.
+• List: Residue (Amino Acid), Phi, Psi
+
+Plot phi/psi in a diagram; i.e. create a Ramachandran plot!
+
+Which secondary structural elements appear to be present in your protein?
+– Compare lecture notes (locate regions associated alpha-helices and beta-sheets in the Ramachandran plot)
+
+Deliverables:
+– Source code for dihedral angle calculation
+– Ramachandran plot with assignment of dominating secondary structural element
+
+Note: For some atoms, two coordinate sets are given (A and B). Choose the “A” set.
+Example:
+ATOM 569 N ATHR A 307 -2.417 -4.358 20.820 0.50 15.11 N
+ATOM 570 N BTHR A 307 -2.411 -4.335 20.838 0.50 15.26 N 
